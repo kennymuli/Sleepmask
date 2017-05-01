@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Sleeping Mask Alarm</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="container">
+	<center>
+		<H1>Sleep Alarm</H1>
+		<H3>Version 0.5</H3>
+		<hr>
+		<form name="alarmInput" action="cgi-bin/trigger.py" method="get">
+			<label for="time">Set your alarm:</label> <input id= "time" type="time" name="time" placeholder="9:00 AM" /> 
+		<input type="submit" id="submit" value="Submit">
+		</form>
+	</center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$('#submit').click(function(){
+	$(this).val('Submitted! Get some rest.');
+	$(this).prop('disabled',true);
+});
+</script>
+</body>
+</html>
