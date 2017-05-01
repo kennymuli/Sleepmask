@@ -1,5 +1,5 @@
-#SleepMask
-###Wake up without waking everyone up
+# SleepMask
+### Wake up without waking everyone up
 
 1. Install Apache2
 2. Upload these files into the /var/www/html folder
